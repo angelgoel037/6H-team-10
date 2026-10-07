@@ -1,60 +1,85 @@
 /**
  * CampusPilot — Core Domain Constants & Enums
- * Source of truth: docs/phase-0/01-PRD.md & docs/phase-0/02-SRD.md
+ * Source of truth: docs/phase-0/01-PRD.md, docs/phase-0/02-SRD.md & team/angel/content-taxonomy.md
  */
 
 export const CAMPUS_CATEGORIES = [
   'technical',
-  'cultural_music',
+  'cultural',
   'sports',
   'social',
   'career',
   'wellness',
+  'learning_research',
+  'important_campus',
+  // Backward-compatibility aliases for early Phase 0 drafts:
+  'cultural_music',
   'academic_important',
 ] as const;
 
 export type CampusCategory = (typeof CAMPUS_CATEGORIES)[number];
 
-export const CATEGORY_LABELS: Record<CampusCategory, { label: string; icon: string; description: string }> = {
+export const PRIMARY_CAMPUS_CATEGORIES = [
+  'technical',
+  'cultural',
+  'sports',
+  'social',
+  'career',
+  'wellness',
+  'learning_research',
+  'important_campus',
+] as const;
+
+export type PrimaryCampusCategory = (typeof PRIMARY_CAMPUS_CATEGORIES)[number];
+
+export const CATEGORY_LABELS: Record<PrimaryCampusCategory, { label: string; icon: string; description: string }> = {
   technical: {
-    label: 'Technical & Coding',
+    label: 'Technical',
     icon: '💻',
-    description: 'Hackathons, coding, AI, robotics, tech workshops',
+    description: 'Hackathons, coding, AI/ML, robotics, tech workshops',
   },
-  cultural_music: {
-    label: 'Cultural & Music',
-    icon: '🎵',
-    description: 'Music society, dance, drama, art, open mic',
+  cultural: {
+    label: 'Cultural',
+    icon: '🎭',
+    description: 'Music, dance, drama, art, fashion, literary fests',
   },
   sports: {
-    label: 'Sports & Esports',
+    label: 'Sports',
     icon: '🏆',
     description: 'Cricket, football, basketball, athletics, esports',
   },
   social: {
     label: 'Social & Campus Life',
     icon: '🎉',
-    description: 'Freshers, farewell, fests, parties, student gatherings',
+    description: 'Freshers, farewell, fests, parties, social meetups',
   },
   career: {
-    label: 'Career & Internships',
+    label: 'Career',
     icon: '💼',
-    description: 'Placement talks, internships, company sessions, resume workshops',
+    description: 'Placements, internships, resume workshops, company talks',
   },
   wellness: {
-    label: 'Wellness & Psychology',
+    label: 'Wellness',
     icon: '🧠',
-    description: 'Psychology sessions, health camps, mental wellbeing workshops',
+    description: 'Psychology, mental wellbeing, stress management, health camps',
   },
-  academic_important: {
-    label: 'Academic & Notices',
+  learning_research: {
+    label: 'Learning & Research',
+    icon: '🔬',
+    description: 'Guest lectures, seminars, research talks, academic workshops',
+  },
+  important_campus: {
+    label: 'Important Campus',
     icon: '📢',
-    description: 'MST/exam schedules, results, key institutional notices',
+    description: 'MST/exam notices, result declarations, university circulars',
   },
 };
 
 export const IMPORTANCE_LEVELS = ['normal', 'high', 'critical'] as const;
 export type ImportanceLevel = (typeof IMPORTANCE_LEVELS)[number];
+
+export const PRIORITY_LEVELS = ['CRITICAL', 'HIGH', 'NORMAL', 'DISCOVERY'] as const;
+export type PriorityLevel = (typeof PRIORITY_LEVELS)[number];
 
 export const ITEM_STATUSES = ['draft', 'published', 'cancelled', 'archived'] as const;
 export type ItemStatus = (typeof ITEM_STATUSES)[number];

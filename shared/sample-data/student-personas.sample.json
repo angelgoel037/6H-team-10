@@ -1,0 +1,46 @@
+[
+  {
+    "id": "persona-angel",
+    "name": "Angel Goel",
+    "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=300&q=80",
+    "year": "3rd Year",
+    "department": "Computer Science & Engineering",
+    "selectedCategories": ["technical", "cultural", "sports", "career"],
+    "bio": "Building AI systems, plays guitar at acoustic nights, and point guard for the departmental basketball team.",
+    "demoFocus": "Scenario 1: Tech + Cultural + Sports cross-discovery with Urgent Hackathon alert.",
+    "samplePlanItemIds": ["ci-tech-01", "ci-cult-01", "ci-sports-01"]
+  },
+  {
+    "id": "persona-nidhi",
+    "name": "Nidhi Sharma",
+    "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=300&q=80",
+    "year": "2nd Year",
+    "department": "Design & Media Communications",
+    "selectedCategories": ["cultural", "social"],
+    "bio": "Lead coordinator for Dramatics Society, photographer at college fests, and avid poetry slam enthusiast.",
+    "demoFocus": "Scenario 2: Cultural-first feed with battle of bands, street plays, and freshers party.",
+    "samplePlanItemIds": ["ci-cult-02", "ci-cult-03", "ci-soc-01"]
+  },
+  {
+    "id": "persona-rohit",
+    "name": "Rohit Verma",
+    "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=300&q=80",
+    "year": "4th Year",
+    "department": "Information Technology",
+    "selectedCategories": ["sports", "technical"],
+    "bio": "Valorant team captain, competitive programmer on Codeforces, and night box cricket enthusiast.",
+    "demoFocus": "Scenario 3: Esports tournament, DSA speed duel, and time-conflict detection in My Plan.",
+    "samplePlanItemIds": ["ci-sports-02", "ci-tech-02", "ci-sports-03"]
+  },
+  {
+    "id": "persona-priya",
+    "name": "Priya Sen",
+    "avatar": "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=300&q=80",
+    "year": "4th Year",
+    "department": "Electrical & Electronics Engineering",
+    "selectedCategories": ["career", "wellness", "learning_research"],
+    "bio": "Prepping for FAANG placement drives, attending quantum computing seminars, and practicing morning mindfulness.",
+    "demoFocus": "Scenario 4: High-stakes placement masterclass, research symposium, and midterm stress relief.",
+    "samplePlanItemIds": ["ci-career-01", "ci-learn-01", "ci-well-01"]
+  }
+]

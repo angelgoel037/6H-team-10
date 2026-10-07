@@ -89,7 +89,7 @@ export default function HomePage() {
       {/* Category Taxonomy Preview */}
       <section className="space-y-3">
         <h3 className="text-xs font-semibold uppercase tracking-wider text-slate-500">
-          Core Campus Category Taxonomy (7 MVP Streams)
+          Core Campus Category Taxonomy (8 Canonical Streams)
         </h3>
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-2.5 text-xs">
           {Object.entries(CATEGORY_LABELS).map(([key, item]) => (
